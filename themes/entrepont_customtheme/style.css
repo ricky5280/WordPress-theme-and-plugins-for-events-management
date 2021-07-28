@@ -1,0 +1,341 @@
+/*
+Theme Name: Entrepont_customtheme
+Version: 1.0
+Author: Riccardo
+*/
+
+
+/* 
+
+colors
+green: #CBE8AD;
+lightgrey : #D4D4D4;
+darkgrey : #717171
+
+*/
+
+.green-text {
+    color: #CBE8AD;
+}
+
+.green-bkgr {
+    background-color: #CBE8AD;
+}
+
+
+/* formatting  */
+
+body {
+    background-color: lightgray;
+    padding: 0;
+    margin: 0;
+}
+
+
+a {  
+    color: #CBE8AD;
+    font-weight: 600;
+}
+
+
+
+/* navbar */
+
+.navbar {
+
+    background-color: black;
+    color: #CBE8AD;
+    font-weight: 600;
+    
+}
+
+.navbar-brand {
+
+    color: #CBE8AD;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navbar a {
+    /* background-color: black; */
+    color: #CBE8AD;
+    font-weight: 600;
+}
+
+
+#menu-menu-principale li a {
+    margin-left: 3rem;
+}
+
+
+
+/* header  */
+
+
+#header-img {
+    
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;  
+}
+
+#header {
+    background-color: #CBE8AD;
+    border:2px solid black; 
+    margin:auto;
+}
+
+#title {
+    line-height: 5rem;
+    font-size: 2.5rem !important;
+}
+
+#header h2 {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    margin: 0;
+}
+
+
+#presentation {
+    background-color: #CBE8AD;
+    border:2px solid black; 
+    border-radius: 0 0 1rem 1rem !important;
+}
+
+
+
+/* main */
+
+#container {
+
+    padding-bottom: 3rem;
+}
+
+
+.card-body {
+    background-color:white;
+    border:1px solid black; 
+    
+}
+
+.btn {
+    background-color: black;
+    color: #CBE8AD;
+}
+
+.btn:hover {
+    background-color: #CBE8AD !important;
+    color:black !important;
+}
+
+
+h3 {
+    color:black;
+}
+
+
+
+/* édito */
+
+#edito {
+    background-color: white;
+    border-radius: 1rem;
+    border:2px solid black;
+}
+
+
+
+
+
+/* carrousel accueil */
+
+#container_2 {
+    background-color: #CBE8AD;
+    border : 2px solid black;
+    border-radius: 1rem;
+}
+
+
+#date {
+    margin : 20px 0;
+    background-color: black;
+    color: #CBE8AD;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+#carrousel h6 a {
+    color : black;
+    padding: 5px;
+}
+
+
+
+
+
+/* page événements */
+
+.pagination a {    
+    color: black;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border:2px solid black;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.pagination span {
+    font-weight: 600;   
+    padding: 0.5rem 1rem; 
+    border:2px solid black;    
+    border-radius: 8px;
+    margin-right: 5px;
+    background-color: #CBE8AD;
+}
+
+
+
+
+
+/* footer */
+
+#footer {
+    background-color: black;
+    color: #CBE8AD;
+    
+}
+
+#footer h4 {
+    font-size: 2rem;
+}
+
+
+
+
+/* points de rupture */
+
+@media (max-width:1000px) {
+
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+   
+    #sup-int-header {
+        
+        margin-top: 2rem;
+    }
+
+    #int-header div {
+        max-width: 100%;
+       
+    }
+
+    #int-header div h2 {
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
+
+    #header div h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 0 !important;
+        
+    }
+
+    #header div {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    #header div div h2 {
+        font-size: 1.2rem;
+    }
+
+
+    #presentation h2 {
+        font-size: 2.5rem;
+        
+    }
+
+    #presentation p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+    #container_2 {
+        padding: 0 !important;
+        margin:0 !important;       
+    }
+
+
+    #proch_event {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 !important;
+        margin:0 !important;
+    }
+
+    #proch_event div {
+        margin: 0;
+        padding: 0;
+        max-width: 80%;
+
+    }
+
+}
+
+
+
+@media (max-width:500px) {
+
+    #int-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin:0;
+    }
+
+
+    #int-header div h2 {
+        padding: 0;
+        margin:0;
+       
+    }
+
+
+    #footer_row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 !important;
+        margin:0 !important;
+    }
+
+    #footer {
+        padding: 0 !important;
+        margin:0 !important;
+       
+    }
+
+}
+
+
